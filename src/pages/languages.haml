@@ -1,0 +1,40 @@
+#container
+
+  #top 
+
+    = img "logo.png"
+
+    %h1 Languages and Learning Environments
+    
+    %p.left The following environments and languages have been suggested as good for teaching kids
+
+    %h3 Ruby
+
+    %ul
+      %li Shoes (Desktop apps for Mac, Win, Linux.  Easy to create graphics and get started quickly.)
+      %li Sinatra (for easy web apps)
+      %li
+        = link_to 'Online IRB', 'http://tryruby.hobix.com/'
+        One teacher said this wasn't "fun & easy" enough for middle- and high-school kids, but might be a good tool to offer at some point.
+
+    %h3 Other languages
+
+    %ul
+      %li Processing (wicked cool graphics/animation programming environment, based on Java language without the normal Java overhead)
+      %li Karel (taught at stanford intro CS classes with a Robot!)
+      %li
+        = link_to 'Alice', 'http://www.alice.org'
+        (3D drag-and-drop programming environment for telling a story, playing an interactive game, or a video to share on the web. 
+      %li
+        = link_to 'YoYoGames', 'http://www.yoyogames.com/gamemaker'
+        (drag-and-drop game-making tool)
+      %li
+        = link_to 'Scratch', 'http://scratch.mit.edu/'
+        (snap together blocks to make stories, games, & animations)
+
+    .clear
+
+    #bottom
+
+    %p
+      = link_to 'Home', 'index.html'

@@ -1,0 +1,41 @@
+#container
+
+  #top 
+    = img "logo.png"
+
+    %h1 The Teaching Kids Mission:
+
+    %p To help kids learn and grow by teaching them Ruby and Rails.
+
+  #left
+
+    %h2 Teaching Kids News:
+
+    %p Sarah Allen taught a class, hooray!
+    
+    %h2 Other Organizations
+    
+    %ul
+      %li 
+        = link_to 'CSTA', 'http://www.csta.acm.org/'
+      %li 
+        = link_to 'ISTE', 'http://www.iste.org/'
+
+  #right
+
+    %h2 Explore:
+
+    %ul
+      %li 
+        = link_to 'Lessons', 'lessons.html'
+      %li 
+        = link_to 'Languages for Teaching Kids', 'languages.html'
+      %li 
+        = link_to 'Resources', 'resources.html'
+    
+  .clear
+
+  #bottom
+
+  %p
+    = link_to 'Main RailsBridge Site', 'http://railsbridge.org'
