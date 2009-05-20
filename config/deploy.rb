@@ -1,5 +1,5 @@
 set :application, "teachingkids"
-set :repository,  "git://github.com/ffmike/teachingkids-site.git"
+set :repository,  "git://github.com/railsbridge/teachingkids-site.git"
 set :user, "rbadmin"
 set :deploy_via, :copy
 
