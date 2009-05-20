@@ -1,6 +1,6 @@
 set :application, "teachingkids"
 set :repository,  "git://github.com/ffmike/teachingkids-site.git"
-set :user, "webadmin"
+set :user, "rbadmin"
 set :deploy_via, :copy
 
 set :scm, :git
