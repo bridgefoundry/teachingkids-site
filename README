@@ -1,0 +1,9 @@
+- Before checking in, run staticmatic from the project root to build the HTML files:
+
+staticmatic build .
+
+- To deploy, use capistrano:
+
+cap deploy
+
+- Contact Mike Gunderloy or Sarah Allen for the deployment password
