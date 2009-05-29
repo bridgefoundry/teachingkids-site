@@ -1,7 +1,7 @@
 set :application, "teachingkids"
 set :repository,  "git://github.com/railsbridge/teachingkids-site.git"
 set :user, "rbadmin"
-set :deploy_via, :copy
+set :deploy_via, :remote_cache
 
 set :scm, :git
 # set :branch, 'staging'
