@@ -1,6 +1,15 @@
-- Before checking in, run staticmatic from the project root to build the HTML files:
+The new version is in jekyll:
 
-staticmatic build .
+  sudo gem install jekyll
+  
+in the root of this project
+  
+  jekyll
+  
+and it will boot a server for viewing and auto reload the files at
+
+  http://localhost:4000/
+
 
 - To deploy, use capistrano:
 

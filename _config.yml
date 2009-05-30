@@ -4,3 +4,5 @@ lsi:         true
 pygments:    true
 markdown:    maruku
 permalink:   date
+auto: true
+server: true
