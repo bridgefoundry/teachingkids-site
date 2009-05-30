@@ -1,0 +1,18 @@
+---
+layout: blog
+title: Why Shoes?
+---
+### Why Shoes?
+
+The first RailsBridge teaching project is a short series introducing a 4th/5th grade class to programming.  We decided to use [Shoes](http://shoooes.net/) and the Ruby programming language. 
+
+To quote one [Railsbrige comment](http://groups.google.com/group/railsbridge/msg/2c41610f8cc570b4?hl=en)
+Kids want to learn something that is:
+
+  A. Fun
+
+  B. Easy
+
+Ok, maybe Ruby isn't so easy, but relative to a lot of modern programming languages it is pretty good.  There is very little "boilerplate."   Programs are fairly concise and to the point.  I wouldn't touch Javascript for kids since the implementations are so inconsistent.  Kids can deal with rules as long as they are clearly explained and consistent.
+
+Also, Ruby is a "real" programming language that real-world programmers use for practical purposes.  It is effective to teach kids skills that adults use.  When I did research for establishing the curriculum goals for our elementary school, I read a lot about "21st century learning skills" where kids learn to use computers and other tech as tools, in the similar manner to how adults use those tools (beyond using  "educational software" for teaching specific subjects).  I find from personal experience that kids are very motivated when they are learning something that could have application outside of the classroom.
