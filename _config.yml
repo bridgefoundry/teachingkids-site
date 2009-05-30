@@ -1,0 +1,6 @@
+source: ./src
+destination: ./site
+lsi:         true
+pygments:    true
+markdown:    maruku
+permalink:   date
