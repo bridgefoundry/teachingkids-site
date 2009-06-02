@@ -47,7 +47,7 @@ layout: application
 <div id='right'>
 <h2>Latest News</h2>
 <div class="posts">
-          {% for post in site.posts %}
+          {% for post in site.posts limit:1 %}
             <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
             <p>{{ post.content }}</p>
           {% endfor %}

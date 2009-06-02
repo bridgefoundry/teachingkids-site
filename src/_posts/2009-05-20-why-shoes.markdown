@@ -2,8 +2,6 @@
 layout: blog
 title: Why Shoes?
 ---
-### Why Shoes?
-
 The first RailsBridge teaching project is a short series introducing a 4th/5th grade class to programming.  We decided to use [Shoes](http://shoooes.net/) and the Ruby programming language. 
 
 To quote one [Railsbrige comment](http://groups.google.com/group/railsbridge/msg/2c41610f8cc570b4?hl=en)

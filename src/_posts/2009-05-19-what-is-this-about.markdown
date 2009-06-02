@@ -2,8 +2,6 @@
 layout: blog
 title: What's this about?
 ---
-### What's this about?
-
 There are a few reasons why it is important to teach kids how to develop computer applications:
 
 - **A Different Way to Think** kids should learn computer programming for the same reasons they should learn a foreign language or the scientific process. Programming requires a different sort of thinking and problem solving than other disciplines. It is good brain exercise.
