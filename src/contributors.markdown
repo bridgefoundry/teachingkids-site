@@ -5,7 +5,7 @@ layout: application
 Here's a list of the people who are working together to accomplish the TeachingKids mission.
 * [Sarah Allen](http://www.ultrasaurus.com) (teaching, website, curriculum and rabble rousing)
 * Satoshi Asakawa (shoes expert and curriculum publication)
-* [Chad Woolley](http://thewoolleyweb.com/) (teaching)
+* [Chad Woolley](http://thewoolleyweb.com/) (teaching, LiveCD)
 * [Aaron Quint](http://www.quirkey.com/) (website)
 * Noel Gomez (LiveCD)
 * [Mike Gunderloy](http://afreshcup.com/) (website and hosting)
