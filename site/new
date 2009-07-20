@@ -1,0 +1,12 @@
+Users = {"friend" => "checkthisout"} 
+before_filter :http_auth 
+def secret render :text => "Password Required!"  
+end  
+
+private 
+def http_auth
+    realm = "Application"  
+    authenticate_or_request_with_http_digest(realm) do |name| 
+        Users[name] 
+    end  
+end
