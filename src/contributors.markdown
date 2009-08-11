@@ -10,6 +10,7 @@ Here's a list of the people who are working together to accomplish the TeachingK
 * Noel Gomez (LiveCD)
 * [Mike Gunderloy](http://afreshcup.com/) (website and hosting)
 * Michael Kohl (links for teaching kids programming)
+* [Sarah Mei](http://sarahmei.com/blog) (teaching, blog contributions)
 
 
 Special Thanks to: 
