@@ -2,6 +2,8 @@
 layout: blog
 title: Teaching Ruby to High School Girls
 ---
+*August 15th, 2009*
+
 (Guest post by [Sarah Mei](http://sarahmei.com/blog))
 
 For the last few years I've been volunteering one day each summer at the [GetSET](http://www.joyandshine.com/GetSET/) summer camp in Santa Clara. GetSET is pretty awesome, though their website is horrible. It's a week-long sleepaway summer camp for girls from under-represented minorities who live in the San Jose area. They first attend the summer before their freshman year of high school, and they return each year with the same group of cohorts.
