@@ -30,7 +30,7 @@ That was the end of the slides. After that, it was all collaborative coding!
 
 **Philosophy**
 
-This is an introduction to programming, so I focused on getting them excited about programming and what it can do. This meant that they got away with some horrible style and, once in a while, some magic incantations. 
+This is an introduction to programming, so I focused on getting them excited about programming and what it can do. This meant that they got away with some horrible style, and, once in a while, some magic incantations. 
 
 Ruby purists may protest that I didn't talk about objects, or classes, but for the ones who keep going with programming, they'll get that soon enough. In this class, I just wanted them to have fun and see what they could do with code.
 
@@ -42,7 +42,7 @@ I had them start with a blank file. Last year, I was a TA in [Akkana Peck's](htt
 
 Together we wrote an etch-a-sketch program in a series of small steps. I used the agile development philosophies of short iterations and frequent deployment to drive the project. Short iterations means that each step is a fairly minor change - we add one thing that the program didn't have before. Frequent deployment means that we ran the code constantly to get strong visual feedback that they were making progress. These in combination seemed to hold everyone's interest. 
 
-For each step, I coded live on the projector with Notepad's font at 48pt. Then I ran the program to show them what the modified output would look like. Then I switched back to the code, got up, and walked around with the TAs to help the girls troubleshoot when they hit errors trying to make the change that was onscreen. There were 20 girls, 2 TAs, and me. One more TA - for one helper per five girls - would have been perfect.
+For each step, I coded live on the projector with Notepad's font at 48pt. Then I ran the program to show them what the modified output would look like. Then I switched back to the code, got up, and walked around with the TAs to help the girls troubleshoot when they hit errors trying to make the change that was onscreen. There were 20 girls, 2 TAs, and me. The TAs were fabulous, but this was a pretty large class. Having one more TA - for one helper per five girls - would have been perfect.
 
 **Step 0 - a blank application**
 
@@ -72,7 +72,7 @@ For several folks that was an a-ha moment; para is the Spanish word for "for," a
 
 <div style="border: 1px dashed blue; padding-left: 7px;"><code><pre>
 Shoes.app do
-  para "Hello, world"<span class="changedcode">, :align => 'center', :size => 'xx-large'</span>
+  para "Hello, world"<span class="changedcode">, :align => "center", :size => "xx-large"</span>
 end
 </pre></code></div>
 
@@ -84,7 +84,7 @@ The girls ran into a few issues here getting the punctuation right - commas afte
 
 <div style="border: 1px dashed blue; padding-left: 7px;"><code><pre>
 Shoes.app <span class="changedcode">:title => "My awesome application"</span> do
-  para "Hello, world", :align => 'center', :size => 'xx-large'
+  para "Hello, world", :align => "center", :size => "xx-large"
 end
 </pre></code></div>
 
@@ -95,11 +95,11 @@ We went through this one pretty quickly because the girls were eager to get on t
 <div style="border: 1px dashed blue; padding-left: 7px;"><code><pre>
 Shoes.app :title => "My awesome application" do
   <span class="changedcode">background tomato</span>
-  para "Hello, world", :align => 'center', :size => 'xx-large'
+  para "Hello, world", :align => "center", :size => "xx-large"
 end
 </pre></code></div>
 
-I encouraged the girls to try other named colors. When `fushia` didn't work but `fuschia` did, we talked again about the computer's pickiness. When `dark&nbsp;red` didn't work but `darkred` did, we talked about identifiers, and how they can't have spaces. 
+I encouraged the girls to try other named colors. When `fushia` didn't work but `fuschia` did, we talked again about the computer's pickiness. When `dark red` didn't work but `darkred` did, we talked about identifiers, and how they can't have spaces. 
 
 One girl asked if we could add an attribute to the `para` object to change the text color. Aha, they were paying attention when we talked about the scope of attributes! I didn't know the attribute name, so I looked it up. As I did so, I talked about how you don't have to memorize how everything is done to be a good programmer. You just need to know where to find out.
 
@@ -108,12 +108,12 @@ One girl asked if we could add an attribute to the `para` object to change the t
 <div style="border: 1px dashed blue; padding-left: 7px;"><code><pre>
 Shoes.app :title => "My awesome application" do
   background tomato
-  para "Hello, world", :align => 'center', :size => 'xx-large'<span class="changedcode">,</span> 
+  para "Hello, world", :align => "center", :size => "xx-large"<span class="changedcode">,</span> 
                        <span class="changedcode">:stroke => saddlebrown</span>
 end
 </pre></code></div>
 
-They played around with named colors some more. Once they found a few colors that bona fide didn't exist as named colors in Shoes, like "copper," we looked at <a href="images/shoes_colors.jpg">the color page in the Shoes manual</a>. Each color there has its equivalent `rgb` call underneath. I explained that you could say `tomato`, or you could equivalently say `rgb(255, 99, 71)`. The first number is red, the second color is green, and the third color is blue, and every color is a combination of those three colors. Since `tomato` is a reddish color, its first number, the red, is high relative to the other two. 
+They played around with named colors some more. Once they found a few colors that bona fide didn't exist as named colors in Shoes, like "copper," we looked at <a href="/images/shoes_colors.jpg">the color page in the Shoes manual</a>. Each color there has its equivalent `rgb` call underneath. I explained that you could say `tomato`, or you could equivalently say `rgb(255, 99, 71)`. The first number is red, the second color is green, and the third color is blue, and every color is a combination of those three colors. Since `tomato` is a reddish color, its first number, the red, is high relative to the other two. 
 
 If the color you want isn't named, you can use its `rgb` equivalent. I asked for suggestions for a color to try to make, and we settled on periwinkle. I sat down at the projector and erased `tomato` and replaced it with `rgb(`. Then I asked: the first number is red, the second color is green, the third color is blue, so what three numbers should I try?
 
@@ -131,7 +131,7 @@ Shoes.app :title => "My awesome application" do
     <span class="changedcode">rgb(180,170,205)</span>
   <span class="changedcode">end</span>
   background <span class="changedcode">periwinkle</span>
-  para "Hello, world", :align => 'center', :size => 'xx-large', 
+  para "Hello, world", :align => "center", :size => "xx-large", 
                        :stroke => saddlebrown
 end
 </pre></code></div>
@@ -157,8 +157,8 @@ Shoes.app :title => "My awesome application" do
     <span class="changedcode">@headline.text = "I'm changed!"</span>
   <span class="changedcode">end</span>
 
-  <span class="changedcode">@headline = </span>para "Hello, world", :align => 'center', 
-                                   :size => 'xx-large', 
+  <span class="changedcode">@headline = </span>para "Hello, world", :align => "center", 
+                                   :size => "xx-large", 
                                    :stroke => saddlebrown
 end
 </pre></code></div>
@@ -181,8 +181,8 @@ Shoes.app :title => "My awesome application" do
     @headline.text = <span class="changedcode">"#{@button} #{@left} #{@top}"</span>
   end
 
-  @headline = para "Hello, world", :align => 'center', 
-                                   :size => 'xx-large', 
+  @headline = para "Hello, world", :align => "center", 
+                                   :size => "xx-large", 
                                    :stroke => saddlebrown
 end
 </pre></code></div>
@@ -209,8 +209,8 @@ Shoes.app :title => "My awesome application" do
     <span class="changedcode">line 0, 0, @left, @top</span>
   end
 
-  @headline = para "Draw!", :align => 'center', 
-                            :size => 'xx-large', 
+  @headline = para "Draw!", :align => "center", 
+                            :size => "xx-large", 
                             :stroke => saddlebrown
 end
 </pre></code></div>
@@ -219,9 +219,9 @@ In this step we replaced the `para` text replacement with a call to `line`, whic
 
 This went pretty quickly, and it really drove home that 0, 0 is the top left corner of the window. Some of the girls experimented with different origins so they could draw circular stars which I thought was a cool addition.
 
-One thing we did during this step that didn't work so well was to change the names of `@left` and `@top` to the more descriptive `@mouse_column` and `@mouse_row`. I talked a little about how you need to give variables descriptive names, but they were too long to see effectively in 48-pt font on the projector, and it caused odd problems for the girls when they didn't replace all of the uses of `@left` and `@top`. 
+One thing we did during this step that didn't work so well was to change the names of `@left` and `@top` to the more descriptive `@mouse_column` and `@mouse_row`. I talked a little about how you need to give variables descriptive names, but the new names were too long to see effectively in 48-pt font on the projector, and it's really tedious in Notepad to make sure you replace all the instances of `@left` and `@top`. 
 
-I realize now, as I mentioned in the Philosophy section, that with beginners, you can't be too fussy about style. If they want to skip indentation altogether and give all their variables one-letter names, that's fine, as long as they're still excited about what they're doing. *I'm not trying to make good programmers at this point; I'm just showing them how much fun it is.*
+I realize now, as I mentioned in the Philosophy section, that with beginners, you can't be too fussy about style. If they want to skip indentation altogether and give all their variables one-letter names, that's fine, as long as they're still excited about what they're doing. 
 
 If they keep going with it, they'll realize that there's a reason you indent and give your variables descriptive names, and they'll start doing it. But if I just tell them to, they won't. And nothing ensures that they drop it like a hot potato better than harping on them to write maintainable code.
 
@@ -243,15 +243,15 @@ Shoes.app :title => "My awesome application" do
     <span class="changedcode">end</span>
   end
 
-  @headline = para "Draw!", :align => 'center', 
-                            :size => 'xx-large', 
+  @headline = para "Draw!", :align => "center", 
+                            :size => "xx-large", 
                             :stroke => saddlebrown
 end
 </pre></code></div>
 
 This was another fairly quick change - all we added was the `unless` block around the `line` call. Now it only draws a line when a mouse button is down, which allowed the girls to better control what the stars looked like.
 
-We did talk a little bit about `=` (assignment) and `==` (comparison). Because they already knew that `@button` was 0 when no mouse buttons were down, this seemed to make sense.
+We did talk a little bit about `=` (assignment) and `==` (comparison). Because they already knew from the previous steps that `@button` was 0 when no mouse buttons were down, it seemed to make sense to them that we weren't assigning it zero.
 
 **Step 11 - drawing from previous to current coordinates**
 
@@ -271,8 +271,8 @@ Shoes.app :title => "My awesome application" do
     end
   end
 
-  @headline = para "Draw!", :align => 'center', 
-                            :size => 'xx-large', 
+  @headline = para "Draw!", :align => "center", 
+                            :size => "xx-large", 
                             :stroke => saddlebrown
 end
 </pre></code></div>
@@ -304,13 +304,13 @@ Shoes.app :title => "My awesome application" do
   <span class="changedcode">button "Clear" do</span>
     <span class="changedcode">background periwinkle</span>
     <span class="changedcode">@headline.remove</span>
-    <span class="changedcode">@headline = para "Draw!", :align => 'center', </span>
-                              <span class="changedcode">:size => 'xx-large', </span>
+    <span class="changedcode">@headline = para "Draw!", :align => "center", </span>
+                              <span class="changedcode">:size => "xx-large", </span>
                               <span class="changedcode">:stroke => saddlebrown</span>
   <span class="changedcode">end</span>
 
-  @headline = para "Draw!", :align => 'center', 
-                            :size => 'xx-large', 
+  @headline = para "Draw!", :align => "center", 
+                            :size => "xx-large", 
                             :stroke => saddlebrown
 end
 </pre></code></div>
@@ -323,7 +323,7 @@ If you don't `remove` it, even though it's now underneath the background, it wil
 
 The girls rated the workshop quite highly, so I think it was a success. Next time I do this, though, I'll make a few changes:
 
-* Arrange some extra curriculum steps in case everyone's going faster than I expect. The girls got a lot further with the application than I thought they would. I originally only planned out as far as the Clear button, figuring we'd be lucky to get through saving the previous coordinates. But we got through everything, including the RGB detour, including just enough time at the end to implement Clear.
+* Arrange some extra curriculum steps in case everyone's going faster than I expect. The girls got a lot further with the application than I thought they would. I originally only planned out as far as the Clear button, figuring we'd be lucky to get through saving the previous coordinates. But we got through everything, including the RGB detour, with just enough time at the end to implement Clear.
 
 * Prepare a handout with challenge goals for each step. Some girls got through everything really quickly and then looked for more to do. While most found the Shoes manual and started experimenting, a few started doing meebo and facebook. A little more direction would have helped channel their enthusiasm instead of letting it dissipate between steps.
 
