@@ -35,3 +35,7 @@ p.quiet {
 
 p.left {
   text-align: left; }
+  
+.changedcode {
+  background-color: yellow;
+}
