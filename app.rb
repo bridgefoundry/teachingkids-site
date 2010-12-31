@@ -10,7 +10,7 @@ before do
 end
 
 get '/' do
-  File.read('_site/index.html')
+  File.read('site/index.html')
 end
 
 
