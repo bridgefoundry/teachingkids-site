@@ -21,7 +21,7 @@ Next we had the kids use a scripting language, called Pie, where you can use a h
 Lessons learned: browser-based development is awesome for the quick start.  The Pie Bakery needs better error reporting and Flicker integration, since it is a drag to get URLs out of Flickr.
 
 ### Building Curcuits
-On Saturday, we had just two kids and Max led some soldering, kicking off the activities with a series of videos for inspiration:
+On Saturday, we had just two kids and Max led some soldering, kicking off the activities with a series of videos for inspiration.
 
 
 ![soldering](images/soldering.png)
